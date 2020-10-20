@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div col="8">
+            <h3>Registration of purchase</h3>
+            <p>To complete your purchase, fill in the following fields:</p>
+            <form method="post">
+                <input type="hidden" value="@ViewBag.BookId" name="BookId" />
+                <table class="table">
+                    <tr>
+                        <th scope="row">Name:</th>
+                        <td><input type="text" name="User" /> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Address:</th>
+                        <td><input type="text" name="Address" /></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Contact Number:</th>
+                        <td><input type="text" name="ContactNumber" /></td>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td>
+                            <input type="submit" value="Send" class="btn btn-primary float-right" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+
+    
+
